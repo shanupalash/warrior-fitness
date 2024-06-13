@@ -141,6 +141,14 @@ a {
   border-radius: 5px;
 }
 
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  font-size: 1.5rem;
+}
 /* Showcase */
 #showcase {
   background: #252a34 url(../img/showcase1.jpeg) no-repeat center center/cover;

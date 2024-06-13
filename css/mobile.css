@@ -1,130 +1,127 @@
-/* General Adjustments for Mobile */
+/* General Mobile Adjustments */
 body {
-  font-size: 16px; /* Base font size */
-  line-height: 1.6; /* Improved readability */
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 0;
-  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-/* Navbar Adjustments */
+/* Navbar adjustments for mobile */
 #navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding: 0.5rem 1rem;
-  background-color: #333; /* Dark background for contrast */
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000; /* Ensure it stays on top */
-}
-
-#navbar .logo {
-  margin: 0;
 }
 
 #navbar .logo img {
-  height: 40px; /* Adjust logo size */
+  max-width: 150px;
 }
 
 #navbar ul {
-  display: none; /* Hide by default */
+  display: none; /* Hide navbar items by default */
   flex-direction: column;
-  align-items: center;
   width: 100%;
   background-color: #333;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 1rem 0;
+  padding: 0;
   margin: 0;
 }
 
 #navbar ul li {
-  padding: 0.5rem 1rem;
   width: 100%;
   text-align: center;
+  padding: 0.5rem 0;
 }
 
-#navbar ul li a {
-  color: #fff;
-  text-decoration: none;
+#navbar.show ul {
+  display: flex; /* Show navbar items when toggled */
 }
 
 #navbar .menu-toggle {
   display: block;
   cursor: pointer;
-}
-
-#navbar .menu-toggle i {
-  font-size: 1.5rem;
   color: #fff;
+  font-size: 1.5rem;
+  margin-left: auto;
 }
 
-#navbar.show ul {
-  display: flex;
+/* Showcase adjustments for mobile */
+#showcase {
+  padding: 2rem 1rem;
 }
 
-/* Adjustments for other sections */
+#showcase .l-heading {
+  font-size: 2rem;
+}
+
 #showcase .showcase-content {
-  padding: 4rem 1rem;
-  margin-top: 60px; /* To avoid being covered by navbar */
+  padding: 1rem;
 }
 
+#showcase .btn {
+  margin-top: 1rem;
+}
+
+/* About Section adjustments for mobile */
 #about .about-content {
-  text-align: justify;
-  margin: 2rem 0;
+  flex-direction: column;
+  text-align: center;
 }
 
 #about .about-content img {
   width: 100%;
-  margin-top: 1rem;
+  max-width: 300px;
+  margin: 1rem auto;
 }
 
-#cta .cta-content {
-  padding: 2rem 1rem;
+#about p {
+  margin: 0.5rem 0;
 }
 
+/* Programs Section adjustments for mobile */
 #programs .boxes {
-  display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 #programs .box {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
   padding: 1rem;
+  margin: 0.5rem 0;
 }
 
 #programs .box img {
-  width: 100%;
+  width: 50%;
+  max-width: 100px;
+  margin: 0 auto;
 }
 
+/* Trainers Section adjustments for mobile */
 #trainers .trainer-boxes {
-  display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
 }
 
 #trainers .trainer-box {
   padding: 1rem;
+  margin: 0.5rem 0;
   text-align: center;
 }
 
+#trainers .trainer-box img {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 1rem;
+}
+
+/* Contact Section adjustments for mobile */
 #contact {
   padding: 2rem 1rem;
 }
 
 #contact .contact-us {
   width: 100%;
-  max-width: 100%;
+  max-width: 300px;
   padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
 }
 
 #contact .form-group {
@@ -133,30 +130,39 @@ body {
 
 #contact textarea {
   width: 100%;
+  resize: vertical;
 }
 
+/* Address Section adjustments for mobile */
 #address .address-container {
-  padding: 2rem 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#address .address-container p {
+  margin: 0.5rem 0;
 }
 
 @media screen and (max-width: 500px) {
-  /* Further adjustments for smaller screens */
-  #navbar {
-    flex-direction: column;
-    align-items: center;
+  /* Further adjustments for very small screens */
+  #navbar ul li {
+    padding: 0.5rem 0;
   }
 
   #navbar .menu-toggle {
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
   }
 
-  #navbar ul {
-    flex-direction: column;
-    align-items: center;
+  #showcase .l-heading {
+    font-size: 1.5rem;
   }
 
-  #showcase .l-heading,
-  #cta .l-heading {
-    font-size: 2rem; /* Adjusted heading size */
+  #programs .box {
+    padding: 0.5rem;
+  }
+
+  #trainers .trainer-box {
+    padding: 0.5rem;
   }
 }
+

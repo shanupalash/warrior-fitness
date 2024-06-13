@@ -1,83 +1,143 @@
 /* Utility Classes */
-.l-heading{
-  font-size: 3rem; 
+.l-heading {
+  font-size: 3rem; /* Large heading */
 }
 
 .lead {
   font-size: 1rem;
-  line-height: 1.3;
+  line-height: 1.3; /* Paragraph with slightly increased line height */
 }
 
 /* Section: Navbar */
 #navbar {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 1.5rem;
+  padding: 1rem 0; /* Padding on top and bottom */
 }
 
 #navbar .logo {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* Space below the logo */
 }
 
-/* About */
+#navbar ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+#navbar ul li {
+  padding: 0.5rem; /* Spacing around navigation items */
+}
+
+/* About Section */
 #about .about-content {
-  display: block;
   text-align: center;
+  margin: 2rem 0; /* Margin for top and bottom */
 }
 
 #about .about-content img {
   width: 100%;
-  margin: 1rem 0 0 0;
+  max-width: 400px; /* Limit image width */
+  margin-top: 1rem; /* Space above the image */
 }
 
-/* Programs */
+/* Programs Section */
 #programs .boxes {
-  display: block;
+  display: flex;
+  justify-content: space-between; /* Distribute boxes evenly */
+  gap: 1rem; /* Gap between boxes */
 }
 
-/* Expert Trainers */
+/* Expert Trainers Section */
 #trainers .trainer-boxes {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 1rem; /* Gap between trainer boxes */
 }
 
-/* Contact */
+/* Contact Section */
 #contact {
+  display: flex;
   flex-direction: column;
-  height: 1000px;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px; /* Minimum height */
+}
+
+#contact .contact-us {
+  max-width: 600px; /* Limit contact form width */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for medium screens */
+  #navbar {
+    padding-bottom: 0.5rem; /* Smaller padding */
+  }
+
+  #navbar ul li {
+    padding: 0.3rem; /* Reduced padding */
+  }
+
+  #about .about-content img {
+    max-width: 100%; /* Full-width image on smaller screens */
+  }
 }
 
 @media screen and (max-width: 500px) {
-
-  #navbar {
-    position: static;
-  }
+  /* Adjustments for small screens */
   #navbar ul {
-    display: block;
-    text-align: center;
+    flex-direction: column; /* Stack navigation items */
+    align-items: center;
   }
-  
+
   #navbar ul li {
-    padding: 1rem;
+    padding: 0.5rem 1rem; /* More padding horizontally */
   }
 
-  #contact .contact-us .form-group {
-    display: block;
+  #programs .boxes {
+    flex-direction: column; /* Stack boxes vertically */
   }
 
+  #trainers .trainer-boxes {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
 }
 
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Improved readability */
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-@media screen and (min-height: 653px) {
-  
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Responsive and General Styling */
+@media screen and (min-height: 768px) {
+  /* Adjustments for screens with higher height */
   .l-heading {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Slightly smaller heading */
   }
+}
 
-  .m-heading {
-    font-size: 1.75rem;
-    line-height: 1.2;
+@media screen and (max-width: 320px) {
+  /* Adjustments for very small screens */
+  .lead {
+    font-size: 0.9rem; /* Smaller paragraph font size */
   }
-  #cta .cta-content {
-    min-height: 400px;
-   }
 }

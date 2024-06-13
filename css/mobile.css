@@ -1,3 +1,4 @@
+/* General Adjustments for Mobile */
 body {
   font-size: 16px; /* Base font size */
   line-height: 1.6; /* Improved readability */
@@ -9,39 +10,74 @@ body {
 
 /* Navbar Adjustments */
 #navbar {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-}
-
-#navbar ul {
-  display: flex;
-  flex-direction: row;
-  margin-top: 0;
-}
-
-#navbar ul li {
-  padding: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #333; /* Dark background for contrast */
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top */
 }
 
 #navbar .logo {
-  margin-bottom: 0;
+  margin: 0;
 }
 
-/* Showcase Section Adjustments */
+#navbar .logo img {
+  height: 40px; /* Adjust logo size */
+}
+
+#navbar ul {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+#navbar ul li {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar .menu-toggle {
+  display: block;
+  cursor: pointer;
+}
+
+#navbar .menu-toggle i {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#navbar.show ul {
+  display: flex;
+}
+
+/* Adjustments for other sections */
 #showcase .showcase-content {
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
+  margin-top: 60px; /* To avoid being covered by navbar */
 }
 
-#showcase .l-heading {
-  font-size: 2.5rem; /* Adjusted heading size */
-}
-
-/* About Section Adjustments */
 #about .about-content {
   text-align: justify;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 #about .about-content img {
@@ -49,16 +85,10 @@ body {
   margin-top: 1rem;
 }
 
-/* CTA Section Adjustments */
 #cta .cta-content {
   padding: 2rem 1rem;
 }
 
-#cta .l-heading {
-  font-size: 2.5rem; /* Adjusted heading size */
-}
-
-/* Programs Section Adjustments */
 #programs .boxes {
   display: flex;
   flex-direction: column;
@@ -73,7 +103,6 @@ body {
   width: 100%;
 }
 
-/* Trainers Section Adjustments */
 #trainers .trainer-boxes {
   display: grid;
   grid-template-columns: 1fr;
@@ -85,7 +114,6 @@ body {
   text-align: center;
 }
 
-/* Contact Section Adjustments */
 #contact {
   padding: 2rem 1rem;
 }
@@ -107,7 +135,6 @@ body {
   width: 100%;
 }
 
-/* Address Section Adjustments */
 #address .address-container {
   padding: 2rem 1rem;
 }
@@ -117,17 +144,15 @@ body {
   #navbar {
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem;
+  }
+
+  #navbar .menu-toggle {
+    margin-bottom: 0.5rem;
   }
 
   #navbar ul {
     flex-direction: column;
     align-items: center;
-    margin-top: 0.5rem;
-  }
-
-  #navbar ul li {
-    padding: 0.5rem;
   }
 
   #showcase .l-heading,

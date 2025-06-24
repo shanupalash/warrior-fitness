@@ -1,4 +1,12 @@
 /* Roboto Font */
+<<<<<<< HEAD
+=======
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Colors Used: #08D9D6  -  #252A34  -  #FF2E63  -  #EAEAEA */
+
+/* Reset */
+>>>>>>> 1d1926631b93774b9ff6415a1ac12d7d036eb5e1
 * {
   margin: 0;
   padding: 0;
@@ -395,6 +403,7 @@ a {
   margin: 0.5rem 0;
   font-size: 1.1rem;
 }
+<<<<<<< HEAD
 
 
 /* Styling for error messages */
@@ -419,3 +428,5 @@ a {
   background-color: #fff5f5; /* Light red background for visibility */
   transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 }
+=======
+>>>>>>> 1d1926631b93774b9ff6415a1ac12d7d036eb5e1

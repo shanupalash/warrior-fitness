@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+// Initialize and add the map
+function initMap() {
+  // The location of Cairo
+  var cairo = { lat: 23.83255, lng: 78.755005 };
+  // The map, centered at Cairo
+  var map = new google.maps.Map(document.querySelector(".map"), {
+    zoom: 4,
+    center: cairo,
+  });
+  // The marker, positioned at Cairo
+  var marker = new google.maps.Marker({ position: cairo, map: map });
+}
+
+>>>>>>> 1d1926631b93774b9ff6415a1ac12d7d036eb5e1
 // Smooth scrolling
 $("#navbar a, .btn").on("click", function (event) {
   if (this.hash !== "") {
@@ -28,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+<<<<<<< HEAD
     const form = document.querySelector('.contact-us');
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
@@ -125,3 +142,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   </script>
+=======
+>>>>>>> 1d1926631b93774b9ff6415a1ac12d7d036eb5e1

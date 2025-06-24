@@ -1,0 +1,421 @@
+/* Roboto Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Style */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6rem;
+  color: #252a34;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.primary-text {
+  color: #ff2e63;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-dark {
+  background-color: #252a34;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #eaeaea;
+}
+
+.bg-primary {
+  background-color: #08d9d6;
+  color: #fff;
+}
+
+.btn {
+  background-color: #08d9d6;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #ff2e63;
+}
+
+.btn-dark {
+  background-color: #252a34;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.l-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.m-heading {
+  font-size: 2rem;
+  line-height: 2;
+}
+
+.lead {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.box-shadow {
+  box-shadow: 0 0 2px #252a34;
+}
+/* Section: Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#navbar .logo img {
+  width: 100px;
+  display: block;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#navbar ul li a {
+  padding: 1rem;
+  color: #fff;
+}
+
+#navbar ul li a:hover {
+  background-color: #08d9d6;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  font-size: 1.5rem;
+}
+/* Showcase */
+#showcase {
+  background: #252a34 url(../img/showcase1.jpeg) no-repeat center center/cover;
+  height: 90vh;
+  color: #fff;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1.5rem;
+
+  /* overlay 
+  background-color: rgba(0, 0, 0, 0.9);*/
+}
+
+/* Section: About */
+#about .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about .about-content div,
+#about .about-content img {
+  flex: 1;
+}
+
+#about .about-content img {
+  display: block;
+  width: 50%;
+  border: 5px solid #fff;
+  margin-left: 1rem;
+}
+
+/* cta */
+#cta {
+  background: #252a34 url(../img/cta.jpg) no-repeat center center/cover;
+  color: #fff;
+}
+
+#cta .cta-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Our Programs */
+#programs .boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+#programs .boxes .box {
+  flex: 1;
+}
+
+#programs .boxes .box img {
+  width: 50px;
+  background-color: #08d9d6;
+  padding: 0.5rem;
+  border-radius: 100%;
+  color: #252a34;
+}
+
+/* Trainers */
+
+#trainers .trainer-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+#trainers .trainer-boxes .trainer-box {
+  flex: 1 1 calc(33.333% - 4rem);
+  background-color: #fff;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+#trainers .trainer-boxes .trainer-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#trainers .trainer-boxes .trainer-box img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 2px;
+  margin-bottom: 2px;
+}
+
+#trainers .trainer-boxes .trainer-box .content {
+  padding: 1rem 2rem;
+}
+
+#trainers .trainer-boxes .trainer-box h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#trainers .trainer-boxes .trainer-box p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+#trainers .trainer-boxes .trainer-box ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+#trainers .trainer-boxes .trainer-box ul li {
+  margin-right: 1rem;
+}
+
+#trainers .trainer-boxes .trainer-box ul li i {
+  font-size: 1.25rem;
+  color: #252a34;
+  transition: color 0.3s;
+}
+
+#trainers .trainer-boxes .trainer-box ul li i:hover {
+  color: #ff2e63;
+}
+
+/* Contact  */
+
+/* Flexbox container for the contact section */
+#contact {
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Center the form vertically */
+  min-height: 100vh; /* Make the contact section take full viewport height */
+  background-color: #f8f9fa; /* Light background color for the section */
+  padding: 2rem; /* Padding for the section */
+}
+
+/* Styling for the container inside the contact section */
+#contact .contact-container {
+  width: 100%;
+  max-width: 600px; /* Max width to prevent the form from becoming too wide */
+  background-color: #fff; /* White background for the form */
+  padding: 2rem; /* Padding inside the form */
+  border-radius: 8px; /* Rounded corners for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+/* Styling for the heading */
+#contact .contact-heading {
+  font-size: 2rem; /* Larger font size for the heading */
+  margin-bottom: 1.5rem; /* Space below the heading */
+  text-align: center; /* Center-align the heading text */
+  color: #343a40; /* Darker color for the heading text */
+}
+
+/* Styling for form inputs and textarea */
+#contact .contact-us input,
+#contact .contact-us textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da; /* Light border color */
+  border-radius: 4px; /* Slightly rounded corners */
+  margin-bottom: 1rem;
+  font-size: 1rem; /* Font size for better readability */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Focus state for inputs and textarea */
+#contact .contact-us input:focus,
+#contact .contact-us textarea:focus {
+  outline: none; /* Remove default outline */
+  border-color: #007bff; /* Blue border color on focus */
+}
+
+/* Styling for the form group */
+#contact .contact-us .form-group {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Button styling */
+#contact .contact-us button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Primary blue color */
+  color: #fff; /* White text */
+  font-size: 1rem; /* Font size for readability */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect for button */
+#contact .contact-us button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional: Add some space between the form and other elements */
+#contact .contact-us + * {
+  margin-top: 2rem;
+}
+
+#contact .contact-us .form-group input[type="text"] {
+  margin-right: 0.75rem;
+}
+
+/* CSS for the address section */
+
+#address .address-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #48b0bc;
+}
+
+#address .address-container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: rgb(250, 245, 245);
+  /* Make the text color red */
+}
+
+#address .address-container .address-line {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+
+/* Styling for error messages */
+#contact .contact-us .error {
+  color: #ff2e63; /* Matches .primary-text for consistency */
+  font-size: 0.85rem; /* Slightly smaller font for error messages */
+  margin-top: 0.25rem; /* Space above error message */
+  margin-bottom: 1rem; /* Match input margin-bottom */
+  display: none; /* Hidden by default */
+  font-weight: 400; /* Matches Roboto's regular weight */
+}
+
+/* Show error messages when validation fails */
+#contact .contact-us .error.show {
+  display: block; /* Show error when .show is added */
+}
+
+/* Styling for invalid inputs */
+#contact .contact-us input.invalid,
+#contact .contact-us textarea.invalid {
+  border-color: #ff2e63; /* Red border for invalid inputs, matching .primary-text */
+  background-color: #fff5f5; /* Light red background for visibility */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}

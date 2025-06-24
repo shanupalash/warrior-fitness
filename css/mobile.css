@@ -1,0 +1,168 @@
+/* General Mobile Adjustments */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Navbar adjustments for mobile */
+#navbar {
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+
+#navbar .logo img {
+  max-width: 150px;
+}
+
+#navbar ul {
+  display: none; /* Hide navbar items by default */
+  flex-direction: column;
+  width: 100%;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar ul li {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+#navbar.show ul {
+  display: flex; /* Show navbar items when toggled */
+}
+
+#navbar .menu-toggle {
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: auto;
+}
+
+/* Showcase adjustments for mobile */
+#showcase {
+  padding: 2rem 1rem;
+}
+
+#showcase .l-heading {
+  font-size: 2rem;
+}
+
+#showcase .showcase-content {
+  padding: 1rem;
+}
+
+#showcase .btn {
+  margin-top: 1rem;
+}
+
+/* About Section adjustments for mobile */
+#about .about-content {
+  flex-direction: column;
+  text-align: center;
+}
+
+#about .about-content img {
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+#about p {
+  margin: 0.5rem 0;
+}
+
+/* Programs Section adjustments for mobile */
+#programs .boxes {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+#programs .box {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+#programs .box img {
+  width: 50%;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+/* Trainers Section adjustments for mobile */
+#trainers .trainer-boxes {
+  grid-template-columns: 1fr;
+}
+
+#trainers .trainer-box {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+#trainers .trainer-box img {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 1rem;
+}
+
+/* Contact Section adjustments for mobile */
+#contact {
+  padding: 2rem 1rem;
+}
+
+#contact .contact-us {
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+#contact .form-group {
+  margin-bottom: 1rem;
+}
+
+#contact textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+/* Address Section adjustments for mobile */
+#address .address-container {
+  padding: 1rem;
+  text-align: center;
+}
+
+#address .address-container p {
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 500px) {
+  /* Further adjustments for very small screens */
+  #navbar ul li {
+    padding: 0.5rem 0;
+  }
+
+  #navbar .menu-toggle {
+    font-size: 1.2rem;
+  }
+
+  #showcase .l-heading {
+    font-size: 1.5rem;
+  }
+
+  #programs .box {
+    padding: 0.5rem;
+  }
+
+  #trainers .trainer-box {
+    padding: 0.5rem;
+  }
+}
+

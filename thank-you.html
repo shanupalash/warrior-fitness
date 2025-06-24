@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        /* Roboto Font */
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+        /* Colors Used: #08D9D6  -  #252A34  -  #FF2E63  -  #EAEAEA */
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main Style */
+        html,
+        body {
+            font-family: "Roboto", sans-serif;
+            line-height: 1.6rem;
+            color: #252a34;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .primary-text {
+            color: #ff2e63;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .bg-dark {
+            background-color: #252a34;
+            color: #fff;
+        }
+
+        .bg-light {
+            background-color: #eaeaea;
+        }
+
+        .bg-primary {
+            background-color: #08d9d6;
+            color: #fff;
+        }
+
+        .btn {
+            background-color: #08d9d6;
+            padding: 0.5rem 1.25rem;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #fff;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #ff2e63;
+        }
+
+        .py-3 {
+            padding: 3rem 0;
+        }
+
+        .p-3 {
+            padding: 3rem;
+        }
+
+        .l-heading {
+            font-size: 3rem;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        .lead {
+            font-size: 1.5rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .box-shadow {
+            box-shadow: 0 0 2px #252a34;
+        }
+
+        /* Thank You Section */
+        #thank-you {
+            background: #252a34 url('https://images.unsplash.com/photo-1517836357463-d25dfead9741?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            min-height: 100vh;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .thank-you-content {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            text-align: center;
+            max-width: 600px;
+            margin: 1rem;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+            color: #08d9d6;
+        }
+    </style>
+</head>
+<body>
+    <section id="thank-you" class="text-center">
+        <div class="container thank-you-content p-3 box-shadow">
+            <h2 class="l-heading">Thank You!</h2>
+            <p class="lead">Your message has been sent successfully.</p>
+            <p class="quote">"The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion." – Arnold Schwarzenegger</p>
+            <a href="index.html" class="btn">Go Back to the Form</a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        <title>Warrior Fitness</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- WideScreen Style -->
+    <link
+      rel="stylesheet"
+      href="./css/widescreen.css"
+      media="screen and (min-width: 1100px)"
+    />
+    <!-- Smartphone Style -->
+    <link
+      rel="stylesheet"
+      href="./css/mobile.css"
+      media="screen and (max-width: 768px)"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .contact-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-heading {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #343a40;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-control.invalid {
+      border-color: #dc3545;
+    }
+    .error {
+      display: none;
+      color: #dc3545;
+      font-size: 0.875rem;
+      margin-top: 5px;
+    }
+    .error.show {
+      display: block;
+    }
+    .btn-primary {
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1rem;
+      background-color: #007bff;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    
+    <nav id="navbar" class="bg-dark">
+      <div class="logo">
+        <a href="#home"><img src="./img/logo1.png" alt="GYM Logo" /></a>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ShowCase -->
+    <section id="showcase" class="text-center">
+      <div class="showcase-content">
+        <h1 class="l-heading py-1">
+          Work Harder, Get Stronger <br />
+          Easy With Our <span class="primary-text">GYM</span>
+        </h1>
+
+        <a href="#contact" class="btn">Become A Member</a>
+      </div>
+    </section>
+
+    <section id="about" class="bg-light py-1">
+      <div class="container">
+        <h2 class="m-heading text-center py-1">
+          Hello, We are the <span class="primary-text">Warrior's</span>
+        </h2>
+        <div class="about-content">
+          <div>
+            <p>
+              Welcome to Warrior Fitness, where strength meets community. Our
+              gym is more than just a place to work out. it's a sanctuary for
+              those ready to unleash their inner warrior. With a focus on
+              holistic wellness, we offer diverse fitness programs tailored to
+              individual goals and preferences. From intense group classes to
+              personalized training sessions, every aspect is designed to
+              empower you to push your limits and achieve your fitness
+              ambitions. Our state-of-the-art equipment and experienced trainers
+              are here to support you not only in physical training but also in
+              nutrition, mental resilience, and goal setting..
+            </p>
+            <br />
+            <p>
+              Join our community of warriors, regardless of your fitness level
+              or background, and embark on a transformative journey towards
+              better health and wellbeing. Welcome to Warrior Fitness, where you
+              train like a warrior and become part of a family
+            </p>
+          </div>
+          <img class="box-shadow" src="./img/WEIGHTS.JPG" alt="About Us" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="text-center">
+      <div class="cta-content">
+        <div class="container">
+          <h1 class="l-heading py-1">
+            Don't <span class="primary-text">Think</span>, Begin
+            <span class="primary-text">Today</span>!
+          </h1>
+          <p class="lead">
+            Embrace the journey of self-discovery and transformation. Every step
+            forward is a testament to your strength and determination. Seize the
+            opportunity to sculpt your future today at Warrior Fitness
+          </p>
+          <a href="#contact" class="btn">Become A Member</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="text-center py-1">
+      <h2 class="m-heading py-1">
+        Our <span class="primary-text">Programs</span>
+      </h2>
+      <div class="container">
+        <div class="boxes">
+          <div class="box p-1">
+            <img src="./img/Fitness-icon.png" alt="Fitness" />
+            <div>
+              <h3>Basic Fitness</h3>
+              <p>
+                Elevate your fitness journey with our Basic Fitness program.
+                Perfect for beginners and enthusiasts alike, our tailored
+                workouts and expert guidance ensure progress and results.
+              </p>
+            </div>
+          </div>
+          <div class="box p-1">
+            <img src="./img/BodyBuilding-icon.png" alt="Bodybuilding" />
+            <div>
+              <h3>Body Building</h3>
+              <p>
+                Sculpt your ideal physique with our Bodybuilding program. Our
+                experienced trainers provide personalized routines to maximize
+                muscle growth and strength gains.
+              </p>
+            </div>
+          </div>
+          <div class="box p-1">
+            <img src="./img/Yoga-icon.png" alt="Yoga Training" />
+            <div>
+              <h3>Yoga Training</h3>
+              <p>
+                Discover inner balance with our Yoga Training program. Suitable
+                for all levels, our classes focus on flexibility, strength, and
+                mindfulness for a healthier lifestyle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trainers" class="bg-light py-1">
+      <div class="container">
+        <h2 class="m-heading py-1 text-center">
+          Expert <span class="primary-text">Trainers</span>
+        </h2>
+        <div class="trainer-boxes">
+          <div class="trainer-box box-shadow p-1">
+            <img src="./img/trainer1.jpeg" alt="Trainer-1" />
+            <span class="primary-text">Strength Trainer</span>
+            <h4>Animesh Saini</h4>
+            <p>
+              Certified Sports Nutritionist from K11 School of Fitness and
+              Science, dedicated to optimizing performance through tailored
+              nutritional guidance. Unlock your potential with expert insights
+              and personalized strategies for peak fitness.
+            </p>
+
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/warriorfitnesssagar"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/warriorfitnesssagar"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+<div id="contact">
+    <div class="contact-container">
+      <h1 class="contact-heading">Contact Us</h1>
+<form class="contact-us" action="form.php" method="post" novalidate>
+        <div class="form-group">
+          <label for="nameInput" class="form-label">Name</label>
+          <input
+            type="text"
+            id="nameInput"
+            class="form-control"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <span class="error" id="name-error"
+            >Name must contain only letters and spaces (2-30 characters).</span
+          >
+        </div>
+        <div class="form-group">
+          <label for="emailInput" class="form-label">Email</label>
+          <input
+            type="email"
+            id="emailInput"
+            class="form-control"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <span class="error" id="email-error">Please enter a valid email address.</span>
+        </div>
+        <div class="form-group">
+          <label for="contactInput" class="form-label">Contact Number</label>
+          <input
+            type="tel"
+            id="contactInput"
+            class="form-control"
+            name="contactNumber"
+            placeholder="Enter your phone number"
+            required
+          />
+          <span class="error" id="contactNumber-error"
+            >Please enter a valid phone number (e.g., 098765432111 or 9876543210).</span
+          >
+        </div>
+        <div class="form-group">
+          <label for="messageInput" class="form-label">Message</label>
+          <textarea
+            id="messageInput"
+            class="form-control"
+            name="message"
+            rows="5"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+          <span class="error" id="message-error"
+            >Please specify the information or details you'd like to know.</span
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Get form elements
+    const form = document.querySelector('.contact-us');
+    const nameInput = document.getElementById('nameInput');
+    const emailInput = document.getElementById('emailInput');
+    const contactNumberInput = document.getElementById('contactInput');
+    const messageInput = document.getElementById('messageInput');
+
+    // Get error message elements
+    const nameError = document.getElementById('name-error');
+    const emailError = document.getElementById('email-error');
+    const contactNumberError = document.getElementById('contactNumber-error');
+    const messageError = document.getElementById('message-error');
+
+    // Validation functions
+    function validateName(value) {
+      const nameRegex = /^[A-Za-z\s]{2,30}$/;
+      return nameRegex.test(value);
+    }
+
+    function validateEmail(value) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(value);
+    }
+
+    function validateContactNumber(value) {
+      const phoneRegex = /^\+?[\d\s-]{10,15}$/;
+      return phoneRegex.test(value);
+    }
+
+    function validateMessage(value) {
+      return value.trim().length >= 5 && value.trim().length <= 512;
+    }
+
+    // Show/hide error messages
+    function setError(input, errorElement, isValid) {
+      if (!isValid) {
+        input.classList.add('invalid');
+        errorElement.classList.add('show');
+      } else {
+        input.classList.remove('invalid');
+        errorElement.classList.remove('show');
+      }
+    }
+
+    // Real-time validation
+    nameInput.addEventListener('input', () => {
+      setError(nameInput, nameError, validateName(nameInput.value));
+    });
+
+    emailInput.addEventListener('input', () => {
+      setError(emailInput, emailError, validateEmail(emailInput.value));
+    });
+
+    contactNumberInput.addEventListener('input', () => {
+      setError(contactNumberInput, contactNumberError, validateContactNumber(contactNumberInput.value));
+    });
+
+    messageInput.addEventListener('input', () => {
+      setError(messageInput, messageError, validateMessage(messageInput.value));
+    });
+
+    // Validate on blur
+    nameInput.addEventListener('blur', () => {
+      setError(nameInput, nameError, validateName(nameInput.value));
+    });
+
+    emailInput.addEventListener('blur', () => {
+      setError(emailInput, emailError, validateEmail(emailInput.value));
+    });
+
+    contactNumberInput.addEventListener('blur', () => {
+      setError(contactNumberInput, contactNumberError, validateContactNumber(contactNumberInput.value));
+    });
+
+    messageInput.addEventListener('blur', () => {
+      setError(messageInput, messageError, validateMessage(messageInput.value));
+    });
+
+    // Form submission
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const isNameValid = validateName(nameInput.value);
+      const isEmailValid = validateEmail(emailInput.value);
+      const isContactNumberValid = validateContactNumber(contactNumberInput.value);
+      const isMessageValid = validateMessage(messageInput.value);
+
+      setError(nameInput, nameError, isNameValid);
+      setError(emailInput, emailError, isEmailValid);
+      setError(contactNumberInput, contactNumberError, isContactNumberValid);
+      setError(messageInput, messageError, isMessageValid);
+
+
+  if (isNameValid && isEmailValid && isContactNumberValid && isMessageValid) {
+    // Redirect to thank-you page
+      form.submit();
+      }
+      else {
+  alert('Please Enter Correct Information before submitting.');
+}
+
+    });
+    
+  </script>
+  
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+
+    <div id="address" class="container">
+      <div class="address-container">
+        <h2>Feel Free to <span style="color: red">Visit Us</span></h2>
+        <p class="address-line">Shriram Colony, Gopalganj, Sagar (M.P)</p>
+        <p class="address-line">PLEASE VISIT US</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-1 bg-dark">
+      <p>Designed and Managed by palash &copy; 2024, Warrior Fitness</p>
+    </footer>
+
+    <!-- Main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
